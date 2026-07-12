@@ -10,7 +10,6 @@ A content based recommendation engine that matches a user's skills to job roles.
 - Transforms the user input into the same TF IDF vector space.
 - Computes cosine similarity between the user vector and every role vector.
 - Sorts roles by match score and returns the Top 3 recommendations.
-- Includes a reusable `recommend()` function to test multiple skill combinations without repeated manual input.
 ## Tech Stack
 - Python
 - pandas
@@ -23,8 +22,4 @@ A content based recommendation engine that matches a user's skills to job roles.
 5. Display: Print the recommended career paths with match scores.
 ## Cold Start Handling
 If a user enters skills that do not exist in the dataset vocabulary, all similarity scores will be zero. Suggested fixes include an onboarding survey to guide skill entry or expanding the vocabulary over time.
- 
-## Possible Improvements
-- Expand the dataset with more roles and skill variations.
-- Add synonym handling for skills phrased differently.
-- Weight skills by relevance or experience level.
+
